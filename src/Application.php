@@ -26,21 +26,23 @@ class Application
     public function initialize(string $os): void
     {
         if ($os === 'Windows') {
-            $dialog = new WindowsDialog();
+            $this->dialog = new WindowsDialog();
         } else if ($os === 'Web') {
-            $dialog = new WebDialog();
+            $this->dialog = new WebDialog();
         } else {
             throw new \Exception('Error! Unknown operating system.');
         }
-        
-        $dialog->render();
     }
-    
+
     /**
+     * @param string $os
      * @return void
+     * @throws \Exception
      */
     public function main(string $os): void
     {                
         $this->initialize($os);
+
+        $this->dialog->render();
     }
 }
