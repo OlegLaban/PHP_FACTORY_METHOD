@@ -1,0 +1,18 @@
+{
+    "name": "oleglaban/factory_method",
+    "description": "Just realize Factory Method pattern",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Oleglaban\\FactoryMethod\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oleg Laban",
+            "email": "oleg19432@gmail.com"
+        }
+    ],
+    "require": {}
+}
